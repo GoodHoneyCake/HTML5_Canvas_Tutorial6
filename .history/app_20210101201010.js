@@ -60,7 +60,7 @@ class App {
 
     if (this.strings.length > 0) {
       for (let i = 0; i < this.strings.length; i++) {
-        this.strings[i].animate(this.ctx, this.ball.x, this.ball.y);
+        this.strings[i].animate(this.ctx, this.moveX, this.moveY);
       }
     }
 
