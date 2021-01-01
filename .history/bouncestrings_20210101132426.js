@@ -1,5 +1,3 @@
-const BOUNCE = 0.92;
-
 export class BounceString {
   constructor(pos, color) {
     const middleX = (pos.x2 - pos.x1) / 2 + pos.x1;

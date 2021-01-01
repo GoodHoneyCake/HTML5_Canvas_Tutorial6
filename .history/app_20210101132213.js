@@ -31,14 +31,13 @@ class App {
     this.ctx.scale(this.pixelRatio, this.pixelRatio);
 
     this.strings = [
-      new BounceString(
-        {
-          x1: 50,
-          y1: this.stageHeight / 2,
-          x2: this.stageWidth - 50,
-          y2: this.stageHeight / 2,
-        },
-        "#ff5038"
+      new BounceString({
+        x1: 50,
+        y1: this.stageHeight / 2,
+        x2: this.stageWidth - 50,
+        y2: this.stageHeight / 2,
+      }
+      '#ff5038'
       ),
     ];
   }
@@ -47,12 +46,6 @@ class App {
     window.requestAnimationFrame(this.animate.bind(this));
 
     this.ctx.clearRect(0, 0, this.stageWidth, this.stageHeight);
-
-    if (this.strings.length > 0) {
-      for (let i = 0; i < this.strings.length; i++) {
-        this.strings[i].animate(this.ctx, this.moveX, this.moveY);
-      }
-    }
   }
 
   onDown(e) {

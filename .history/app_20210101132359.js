@@ -38,7 +38,7 @@ class App {
           x2: this.stageWidth - 50,
           y2: this.stageHeight / 2,
         },
-        "#ff5038"
+        "#fff"
       ),
     ];
   }
