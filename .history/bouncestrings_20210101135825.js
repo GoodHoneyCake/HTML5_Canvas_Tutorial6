@@ -59,7 +59,7 @@ export class BounceString {
         this.detect
       )
     ) {
-      this.detect = 300;
+      this.detect = 30;
       let tx = (this.points[1].ox + moveX) / 2;
       let ty = moveY;
       this.points[1].vx = tx - this.points[1].x;
@@ -83,7 +83,7 @@ export class BounceString {
 
     for (let i = 0; i < this.points.length; i++) {
       const cx = (prevX + this.points[i].x) / 2;
-      const cy = (prevY + this.points[i].y) / 2;
+      const cy = prevY + this.points[i].y / 2;
 
       ctx.quadraticCurveTo(prevX, prevY, cx, cy);
 
