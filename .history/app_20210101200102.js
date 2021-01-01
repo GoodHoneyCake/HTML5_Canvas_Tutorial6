@@ -42,9 +42,9 @@ class App {
       this.strings[i] = new BounceString(
         {
           x1: x1,
-          y1: i * yGap + yGap,
+          y1: i * xGap + xGap,
           x2: x2,
-          y2: i * yGap + yGap,
+          y2: i * xGap + xGap,
         },
         "#ff5038"
       );

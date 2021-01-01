@@ -1,6 +1,6 @@
 import { lineCircle } from "./utils.js";
 
-const BOUNCE = 0.92;
+const BOUNCE = 0.82;
 
 export class BounceString {
   constructor(pos, color) {
@@ -41,7 +41,7 @@ export class BounceString {
   animate(ctx, moveX, moveY) {
     ctx.beginPath();
     ctx.fillStyle = "#ff00ff";
-    ctx.arc(moveX, moveY, 20, 0, Math.PI * 2, false);
+    ctx.arc(moveX, moveY, 60, 0, Math.PI * 2, false);
     ctx.fill();
 
     ctx.beginPath();

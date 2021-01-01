@@ -40,14 +40,15 @@ class App {
 
     for (let i = 0; i < total; i++) {
       this.strings[i] = new BounceString(
-        {
-          x1: x1,
-          y1: i * yGap + yGap,
-          x2: x2,
-          y2: i * yGap + yGap,
-        },
-        "#ff5038"
-      );
+          {
+            x1: x1,
+            y1: i * yGap + yGap,
+            x2: x2,
+            y2: i * yGap + yGap,
+          },
+          "#ff5038"
+        ),
+        }
     }
   }
 
